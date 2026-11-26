@@ -1,76 +1,159 @@
-<!DOCTYPE   >
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rafimupsrm</title>
-   <link rel="stylesheet" href="style.css">
+    <!-- 1. Panggil Bootstrap CSS dulu -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- 2. Baru panggil style.css milik Anda -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+
+    <!-- <header>
         <h1>Selamat Datang!</h1>
-    </header>
-    <nav>
-        <a href="#about"> <button class="about-button">Tentang Saya</button></a>
-        <a href="#experience"> <button class="experience-button">Pengalaman</button></a>
-        <a href="#projects"> <button class="projects-button">Proyek</button></a>
-        <a href="#contact"> <button class="contact-button"> Kontak </button> </a>
-    </nav>
+    </header> -->
+    <nav class="navbar navbar-expand-lg navbar-top sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">RAFI MUPASHAL</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang Saya</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-        <img src="Images/head.JPG" class="foto-1">
+    
+<div class="container">
+    <div class="container-about my-4">
+    <div class="row align-items-center">
         
+        <!-- Bagian Foto: Lebar penuh di HP (col-12), 4 kolom di PC (col-md-4) -->
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+            <img src="Images/head.JPG" class="foto-1 img-fluid rounded" alt="Foto Rafi Mupashal">
+        </div>
 
-    <div class="container">
-        <section id="about" class="about">
+        <!-- Bagian Teks: Lebar penuh di HP (col-12), 8 kolom di PC (col-md-8) -->
+        <div class="col-12 col-md-8">
+            <section id="about" class="about">
                 <h2 class="rafi-mupashal">RAFI MUPASHAL</h2>
-            <div class="halo">
-                <b>Halo,</b>
-            </div>
-            Saya seorang <i>barista</i> yang bersemangat dalam menciptakan pengalaman kopi terbaik bagi pelanggan. 
-            Selain membuat kopi, saya memiliki ketertarikan besar dalam bidang pemrograman. 
-            Saya belajar pemrograman secara otodidak dan sangat menikmati memecahkan masalah melalui kode. 
-            Saat ini, saya sedang mengembangkan keterampilan saya dalam C++ dan HTML, dan saya berharap dapat menggabungkan kecintaan 
-            saya pada kopi dan teknologi untuk menciptakan solusi inovatif di industri ini.
-        </section>
+                <div class="halo">
+                    <b>Halo,</b>
+                </div>
+                <p>
+                    Saya seorang <i>barista</i> yang bersemangat dalam menciptakan pengalaman kopi terbaik bagi pelanggan. 
+                    Selain membuat kopi, saya memiliki ketertarikan besar dalam bidang pemrograman. 
+                    Saya belajar pemrograman secara otodidak dan sangat menikmati memecahkan masalah melalui kode. 
+                    Saat ini, saya sedang mengembangkan keterampilan saya dalam C++ dan HTML, dan saya berharap dapat menggabungkan kecintaan 
+                    saya pada kopi dan teknologi untuk menciptakan solusi inovatif di industri ini.
+                </p>
+            </section>
+        </div>
+
+    </div>
+    </div>    
 
 <!--                                                                BIODATA                                                                  -->
-    <div class="biodata">
-        <h2>BIODATA</h2> 
+<section id="biodata" class="my-5">
+    <h2 class="biodata text-center mb-4">BIODATA</h2>
+    <div class="row justify-content-center">
+        <!-- Kotak pembungkus agar lebar biodata proporsional di tengah layar -->
+        <div class="col-12 col-md-8 col-lg-12">
+            <div class="row g-3 text-start">
+                <div class="col-12 col-sm-6">
+                    <table class="table-biodata">
+                        <tr>
+                            <td class="label-bio">Nama Depan</td>
+                            <td class="px-2">:</td>
+                            <td><b>Rafi</b></td>
+                        </tr>
+                        <tr>
+                            <td class="label-bio">Belakang</td>
+                            <td class="px-2">:</td>
+                            <td><b>Mupashal</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <table class="table-biodata">
+                        <tr>
+                            <td class="label-bio">Umur</td>
+                            <td class="px-2">:</td>
+                            <td><b>25 Tahun</b></td>
+                        </tr>
+                        <tr>
+                            <td class="label-bio">Alamat</td>
+                            <td class="px-2">:</td>
+                            <td><b>Bekasi, Jawa Barat</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
-        <div class="nama">
-            <p>Nama Depan : <b> Rafi</b></p>
-            <p>Belakang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <b>Mupashal</b></p>
-        </div>
-        <div class="umur">
-            <p>Umur &nbsp;&nbsp;: <b>22 Tahun</b></p>
-            <p>Alamat : <b>Bekasi, Jawa Barat</b></p>
-        </div>
+</section>
 
 <!--                                                                PENGALAMAN                                                               -->
-        <section id="experience" class="experience">
-            <h2 class="pengalaman">PENGALAMAN</h2>
-            <div class="experience-item">
-                <div class="pengalaman-1">
-                    <h3>Barista</h3>
-                    <p><a href="https://g.co/kgs/Dt9tZ4N"><b>CV. Mino Food</b></a> | 2021 - Sekarang</p>
-                    Bertanggung Jawab atas Operasional Kedai
-                    <br>Membuat Jadwal Kerja
-                    <br>Mengoperasikan Mesin Espresso
-                    <br>Membuat Manual Brew
-                    <br>Menguasai Basic Latte Art
-                </div>
+<section id="experience" class="experience my-5">
+    <h2 class="pengalaman text-center mb-4">PENGALAMAN</h2>
+    <div class="row justify-content-center g-4">
+        
+        <!-- Pengalaman 1 -->
+        <div class="col-12 col-md-5">
+            <div class="experience-item p-4 rounded h-100 text-start">
+                <h3 class="mb-1">Barista</h3>
+                <p class="mb-3"><a href="https://g.co/kgs/Dt9tZ4N" target="_blank"><b>Can Ngopi</b></a> | 2020 (-1 Tahun)</p>
+                <ul class="mb-0 ps-3">
+                    <li>Mengoperasikan Mesin Espresso</li>
+                    <li>Membuat Manual Brew</li>
+                    <li>Basic Latte Art</li>
+                </ul>
             </div>
-                <div class="experience-item">
-                    <div class="pengalaman-2">
-                    <h3>Barista</h3>
-                    <p><a href="https://g.co/kgs/hR9vrWY"><b>Can Ngopi</b></a> | -1 Tahun</p>
-                    Mengoperasikan Mesin Espresso
-                    <br>Membuat Manual Brew
-                    <br> Basic Latte Art
-                </div>
+        </div>
+
+        <!-- Pengalaman 2 -->
+        <div class="col-12 col-md-5">
+            <div class="experience-item p-4 rounded h-100 text-start">
+                <h3 class="mb-1">Barista</h3>
+                <p class="mb-3"><a href="https://g.co/kgs/hR9vrWY" target="_blank"><b>CV. Mino Food Indonesia</b></a> | 2021 - 2026 </p>
+                <ul class="mb-0 ps-3">
+                    <li>Bertanggung Jawab atas Operasional Kedai</li>
+                    <li>Membuat Jadwal Kerja</li>
+                    <li>Mengoperasikan Mesin Espresso</li>
+                    <li>Membuat Manual Brew</li>
+                    <li>Menguasai Basic Latte Art</li>
+                </ul>
             </div>
-        </section>
+        </div>
+
+        <!-- Pengalaman 3 -->
+        <div class="col-12 col-md-5">
+            <div class="experience-item p-4 rounded h-100 text-start">
+                <h3 class="mb-1">Barista</h3>
+                <p class="mb-3"><a href="https://g.co/kgs/hR9vrWY" target="_blank"><b>Yuuki Coffee</b></a> | 2026 - Sekarang</p>
+                <ul class="mb-0 ps-3">
+                    <li>Bertanggung Jawab atas Operasional Kedai</li>
+                    <li>Membuat Jadwal Kerja</li>
+                    <li>Mengoperasikan Mesin Espresso</li>
+                    <li>Membuat Manual Brew</li>
+                    <li>Menguasai Basic Latte Art</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
         <section id="projects" class="projects">
@@ -91,13 +174,16 @@
         <section id="contact" class="contact">
             <h2 class="section-title">Kontak</h2>
             <p>E-mail: <a href="mailto:rafimupashal07@gmail.com">rafimupashal07@gmail.com</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/rafimupsrm"> @rafimupsrm</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/rafimupsrm"> @rafimuprm</a></p>
         </section>
-    </div>
+</div>
 
 
     <footer>
         <p>&copy; 2024 Rafi Mupashal. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
